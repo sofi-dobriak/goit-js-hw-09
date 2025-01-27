@@ -1,7 +1,11 @@
-* {
-    box-sizing: border-box;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
+.gallery-image {
+    width: 360px;
+    height: auto;
 }

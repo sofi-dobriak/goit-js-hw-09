@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+.list {
+    padding-left: 10px;
+}
+
+.list-item {
+    margin-bottom: 10px;
+}

@@ -1,4 +1,5 @@
-'use strict';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
@@ -65,3 +66,29 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
+
+const gallery = document.querySelector('.gallery');
+
+const markup = imagesTemplate(images);
+gallery.insertAdjacentHTML('afterbegin', markup);
+
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
+
+function imageTemplate({ preview, original, description }) {
+  return `<li class="gallery-item">
+            <a class="gallery-link" href="${original}">
+              <img 
+                class="gallery-image" 
+                src="${preview}" 
+                alt="${description}" 
+                />
+            </a>
+          </li>`;
+}
+
+function imagesTemplate(array) {
+  return array.map(imageTemplate).join('');
+}

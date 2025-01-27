@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */const t={form:document.querySelector(".feedback-form"),labels:document.querySelectorAll("label"),input:document.querySelector("input"),textArea:document.querySelector("textarea"),button:document.querySelector("button")};t.labels.forEach(e=>e.classList.add("form-label"));t.input.classList.add("form-input");t.textArea.classList.add("form-textArea");t.button.classList.add("button");
+//# sourceMappingURL=2-form.js.map

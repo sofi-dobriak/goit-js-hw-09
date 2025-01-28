@@ -56,7 +56,7 @@ refs.form.addEventListener('submit', e => {
   const submittedData = { email, message };
 
   console.log(submittedData);
-  localStorage.removeItem(localeStorageKey);
 
+  localStorage.removeItem(localeStorageKey);
   refs.form.reset();
 });

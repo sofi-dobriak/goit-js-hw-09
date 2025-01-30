@@ -67,6 +67,6 @@ function loadFromLS(key) {
 //-------------------------- STYLES ---------------------------------------
 refs.labels.forEach(label => label.classList.add('form-label'));
 refs.input.classList.add('form-input');
-refs.textArea.classList.add('form-textArea');
-refs.button.classList.add('button');
+refs.textArea.classList.add('form-textarea');
+refs.button.classList.add('form-button');
 //-----------------------------------------------------------------

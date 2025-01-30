@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     max-width: 360px;
     margin-top: 10px;
+    margin-left: 20px;
 }
 
 .form-label {
@@ -49,7 +50,7 @@ body {
     border-color: #808080;
 }
 
-.form-textArea {
+.form-textarea {
     resize: none;
     display: block;
 
@@ -75,7 +76,7 @@ body {
     border-color: #808080;
 }
 
-.button {
+.form-button {
     display: block;
 
     border-radius: 8px;
@@ -93,7 +94,7 @@ body {
     margin-top: 8px;
 }
 
-.button:hover,
-.button:focus {
+.form-button:hover,
+.form-button:focus {
     background-color: #6c8cff;
 }

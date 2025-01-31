@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  <script type="module" crossorigin src="/goit-js-hw-09/solar-system.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-JkSXkVRx.css">
+</head>
+
+<body>
+
+    <main>
+        <a href="./index.html">Go Back</a>
+
+        <button class="form-button js-add-object-button solar-add-object-button" type="button">Додати об'єкт</button>
+
+        <div class="modal-backdrop js-modal-backdrop">
+            <div class="modal-window js-modal-window">
+                <form class="solar-form feedback-form" autocomplete="off">
+
+                    <label class="form-label">
+                        Зображення
+                        <input class="form-input" type="text" name="image" placeholder="URL зображення" autofocus />
+                    </label>
+
+                    <label class="form-label">
+                        Назва
+                        <input class="form-input" type="text" name="title" placeholder="Наприклад, Земля" />
+                    </label>
+
+                    <label class="form-label">
+                        Тип
+                        <select class="form-input" name="type">
+                            <option value="Планета">Планета</option>
+                            <option value="Карликова планета">Карликова планета</option>
+                            <option value="Супутник">Супутник</option>
+                            <option value="Астероїд">Астероїд</option>
+                            <option value="Комета">Комета</option>
+                            <option value="Зірка">Зірка</option>
+                        </select>
+                    </label>
+
+                    <label class="form-label">
+                        Діаметр (км)
+                        <input class="form-input" type="number" name="diameter" placeholder="Введіть діаметр" />
+                    </label>
+
+                    <label class="form-label">
+                        Відстань до Сонця (млн км)
+                        <input class="form-input" type="number" name="distance" placeholder="Відстань від Сонця" />
+                    </label>
+
+                    <label class="form-label checkbox-label">
+                        Чи є атмосфера?
+                        <input class="checkbox-input" type="checkbox" name="atmosphere" />
+                    </label>
+
+                    <label class="form-label">
+                        Відкрив
+                        <input class="form-input" type="text" name="discovered_by"
+                            placeholder="Ім'я астронома або 'Давнина'" />
+                    </label>
+
+                    <button class="form-button js-solar-submit-button" type="submit">Додати</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="container"></div>
+
+    </main>
+
+
+</body>
+
+</html>

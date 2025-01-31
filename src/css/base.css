@@ -20,6 +20,15 @@ li {
     margin-bottom: 10px;
 }
 
+.fieldset {
+    width: 400px;
+    margin: 0 auto 10px;
+}
+
+.fieldset:last-child {
+    margin-bottom: 0;
+}
+
 /* ===== User Form ===== */
 
 .container {
@@ -34,7 +43,7 @@ li {
     border: 1px solid rgba(117, 116, 116, 0.2);
     border-radius: 8px;
     padding: 12px;
-    width: 400px;
+    width: calc((100% - 40px) / 3);
     cursor: pointer;
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }

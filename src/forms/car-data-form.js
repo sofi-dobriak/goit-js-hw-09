@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const CAR_STORAGE_KEY = 'car-form-data';
 const CARS_LIST_KEY = 'cars-list';
 let carsArray = [];

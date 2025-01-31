@@ -8,7 +8,7 @@
     <title>Form</title>
   <script type="module" crossorigin src="/goit-js-hw-09/solar-system.js"></script>
   <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
-  <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-JkSXkVRx.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-DVCRqHG-.css">
 </head>
 
 <body>
@@ -16,54 +16,71 @@
     <main>
         <a href="./index.html">Go Back</a>
 
-        <button class="form-button js-add-object-button solar-add-object-button" type="button">Додати об'єкт</button>
+        <div class="header-form">
+            <div class="search-add-button-container">
+                <input class="search-input js-search-input" type="text" name="search"
+                    placeholder="Введіть назву або тип небесного тіла">
+                <button class="search-button" type="button">Знайти</button>
+            </div>
+            <button class="form-button js-add-object-button solar-add-object-button" type="button">Додати
+                картку</button>
+        </div>
 
         <div class="modal-backdrop js-modal-backdrop">
             <div class="modal-window js-modal-window">
-                <form class="solar-form feedback-form" autocomplete="off">
+                <form class="solar-form" autocomplete="off">
 
-                    <label class="form-label">
-                        Зображення
-                        <input class="form-input" type="text" name="image" placeholder="URL зображення" autofocus />
-                    </label>
+                    <div>
+                        <label class="form-label">
+                            Зображення
+                            <input class="form-input" type="text" name="image" placeholder="URL зображення" autofocus />
+                        </label>
 
-                    <label class="form-label">
-                        Назва
-                        <input class="form-input" type="text" name="title" placeholder="Наприклад, Земля" />
-                    </label>
+                        <label class="form-label">
+                            Назва
+                            <input class="form-input" type="text" name="title" placeholder="Наприклад, Земля" />
+                        </label>
 
-                    <label class="form-label">
-                        Тип
-                        <select class="form-input" name="type">
-                            <option value="Планета">Планета</option>
-                            <option value="Карликова планета">Карликова планета</option>
-                            <option value="Супутник">Супутник</option>
-                            <option value="Астероїд">Астероїд</option>
-                            <option value="Комета">Комета</option>
-                            <option value="Зірка">Зірка</option>
-                        </select>
-                    </label>
+                        <label class="form-label">
+                            Тип
+                            <select class="form-input" name="type">
+                                <option value="Планета">Планета</option>
+                                <option value="Карликова планета">Карликова планета</option>
+                                <option value="Супутник">Супутник</option>
+                                <option value="Астероїд">Астероїд</option>
+                                <option value="Комета">Комета</option>
+                                <option value="Зірка">Зірка</option>
+                            </select>
+                        </label>
 
-                    <label class="form-label">
-                        Діаметр (км)
-                        <input class="form-input" type="number" name="diameter" placeholder="Введіть діаметр" />
-                    </label>
+                        <label class="form-label">
+                            Діаметр (км)
+                            <input class="form-input" type="text" name="diameter" placeholder="Введіть діаметр" />
+                        </label>
+                    </div>
 
-                    <label class="form-label">
-                        Відстань до Сонця (млн км)
-                        <input class="form-input" type="number" name="distance" placeholder="Відстань від Сонця" />
-                    </label>
+                    <div>
+                        <label class="form-label">
+                            Відстань до Сонця (млн км)
+                            <input class="form-input" type="text" name="distance" placeholder="Відстань від Сонця" />
+                        </label>
 
-                    <label class="form-label checkbox-label">
-                        Чи є атмосфера?
-                        <input class="checkbox-input" type="checkbox" name="atmosphere" />
-                    </label>
+                        <label class="form-label checkbox-label atmosphere">
+                            Чи є атмосфера?
+                            <input class="checkbox-input" type="checkbox" name="atmosphere" />
+                        </label>
 
-                    <label class="form-label">
-                        Відкрив
-                        <input class="form-input" type="text" name="discovered_by"
-                            placeholder="Ім'я астронома або 'Давнина'" />
-                    </label>
+                        <label class="form-label">
+                            Відкрив
+                            <input class="form-input" type="text" name="discovered_by"
+                                placeholder="Ім'я астронома або 'Давнина'" />
+                        </label>
+
+                        <label class="form-label">
+                            Посилання на додаткові джерела
+                            <input class="form-input" type="text" name="link" placeholder="URL" autofocus />
+                        </label>
+                    </div>
 
                     <button class="form-button js-solar-submit-button" type="submit">Додати</button>
 
@@ -71,7 +88,7 @@
             </div>
         </div>
 
-        <div class="container"></div>
+        <div class="solar-main-container"></div>
 
     </main>
 

@@ -6,6 +6,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul,
 ol,
 li {
@@ -43,7 +47,7 @@ li {
     border: 1px solid rgba(117, 116, 116, 0.2);
     border-radius: 8px;
     padding: 12px;
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 60px) / 4);
     cursor: pointer;
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }

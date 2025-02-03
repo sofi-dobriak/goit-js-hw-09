@@ -20,12 +20,10 @@ refs.addObjectBtn.addEventListener('click', () => {
   refs.modalBackdrop.classList.add('is-open');
 });
 
-refs.modalWindow.addEventListener('click', e => {
-  e.stopPropagation();
-});
-
-refs.modalBackdrop.addEventListener('click', () => {
-  refs.modalBackdrop.classList.remove('is-open');
+refs.modalBackdrop.addEventListener('click', e => {
+  if (e.target === refs.modalBackdrop) {
+    refs.modalBackdrop.classList.remove('is-open');
+  }
 });
 
 refs.submitObjectBtn.addEventListener('click', () => {

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <a class="go-back" href="./index.html">Go Back</a>
+
+            <form class="form book-form" autocomplete="off">
+
+                <label class="form-label">
+                    Обкладинка
+                    <input class="form-input" type="text" name="coverImage" placeholder="URL зображення" autofocus />
+                </label>
+
+                <label class="form-label">
+                    Назва
+                    <input class="form-input" type="text" name="title" placeholder="Код да Вінчі" />
+                </label>
+
+                <label class="form-label">
+                    Автор
+                    <input class="form-input" type="text" name="author" placeholder="Ден Браун" />
+                </label>
+
+                <label class="form-label">
+                    Жанр
+                    <select class="form-input" name="genre">
+                        <option value="Фентезі">Фентезі</option>
+                        <option value="Пригоди">Пригоди</option>
+                        <option value="Драма">Драма</option>
+                        <option value="Антиутопія">Антиутопія</option>
+                        <option value="Біографія">Біографія</option>
+                        <option value="Історія">Історія</option>
+                        <option value="Детектив">Детектив</option>
+                        <option value="Трилер">Трилер</option>
+                        <option value="Кримінал">Кримінал</option>
+                        <option value="Філософія">Філософія</option>
+                        <option value="Політична сатира">Політична сатира</option>
+                    </select>
+                </label>
+
+                <label class="form-label">
+                    Рік публікації
+                    <input class="form-input" type="text" name="publicYear" placeholder="1988" />
+                </label>
+
+                <label class="form-label">
+                    Опис
+                    <textarea class="form-textarea" type="text" name="description" placeholder="Опис"></textarea>
+                </label>
+
+                <button class="form-button js-submit-button" type="submit">Додати</button>
+
+            </form>
+
+            <div class="books-main-container"></div>
+        </div>
+
+
+    </main>
+
+
+    <script type="module" src="./books-catalog.js" defer></script>
+</body>
+
+</html>

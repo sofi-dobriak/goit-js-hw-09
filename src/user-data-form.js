@@ -4,8 +4,8 @@ const USER_LIST_KEY = 'user-list-key';
 let userDataArray = [];
 
 const refs = {
-  userForm: document.querySelector('.feedback-form'),
-  container: document.querySelector('.container'),
+  userForm: document.querySelector('.form'),
+  container: document.querySelector('.user-main-container'),
 };
 
 refs.userForm.addEventListener('input', e => {
@@ -73,7 +73,7 @@ function loadFromLS(key) {
 }
 
 function cardTemplate({ firstName, lastName, email, phone }) {
-  return `  <div class="user-data-container">
+  return `  <div class="user-container">
                 <p class="first-name"><strong>First Name</strong>: ${firstName}</p>
                 <p class="last-name"><strong>Last Name</strong>: ${lastName}</p>
                 <p class="email"><strong>Email</strong>: ${email}</p>
@@ -90,72 +90,72 @@ function cardsTemplate(cards) {
 //     firstName: 'John',
 //     lastName: 'Doe',
 //     email: 'john.doe@example.com',
-//     phone: '+1234567890',
+//     phone: '1234567890',
 //   },
 //   {
 //     firstName: 'Jane',
 //     lastName: 'Smith',
 //     email: 'jane.smith@example.com',
-//     phone: '+1987654321',
+//     phone: '1987654321',
 //   },
 //   {
 //     firstName: 'Alice',
 //     lastName: 'Brown',
 //     email: 'alice.brown@example.com',
-//     phone: '+1122334455',
+//     phone: '1122334455',
 //   },
 //   {
 //     firstName: 'Bob',
 //     lastName: 'Johnson',
 //     email: 'bob.johnson@example.com',
-//     phone: '+1098765432',
+//     phone: '1098765432',
 //   },
 //   {
 //     firstName: 'Emma',
 //     lastName: 'Brown',
 //     email: 'emma.brown@example.com',
-//     phone: '+14165552345',
+//     phone: '14165552345',
 //   },
 //   {
 //     firstName: 'Michael',
 //     lastName: 'Williams',
 //     email: 'michael.williams@example.com',
-//     phone: '+15105553456',
+//     phone: '15105553456',
 //   },
 //   {
 //     firstName: 'Sophia',
 //     lastName: 'Davis',
 //     email: 'sophia.davis@example.com',
-//     phone: '+16175554567',
+//     phone: '16175554567',
 //   },
 //   {
 //     firstName: 'Daniel',
 //     lastName: 'Miller',
 //     email: 'daniel.miller@example.com',
-//     phone: '+17185555678',
+//     phone: '17185555678',
 //   },
 //   {
 //     firstName: 'Olivia',
 //     lastName: 'Wilson',
 //     email: 'olivia.wilson@example.com',
-//     phone: '+18195556789',
+//     phone: '18195556789',
 //   },
 //   {
 //     firstName: 'Liam',
 //     lastName: 'Anderson',
 //     email: 'liam.anderson@example.com',
-//     phone: '+19205557890',
+//     phone: '19205557890',
 //   },
 //   {
 //     firstName: 'Charlotte',
 //     lastName: 'Thomas',
 //     email: 'charlotte.thomas@example.com',
-//     phone: '+20215558901',
+//     phone: '20215558901',
 //   },
 //   {
 //     firstName: 'James',
 //     lastName: 'Jackson',
 //     email: 'james.jackson@example.com',
-//     phone: '+21225559012',
+//     phone: '21225559012',
 //   },
 // ];

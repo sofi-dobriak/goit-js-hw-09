@@ -3,7 +3,7 @@
 const LOCAL_STORAGE_KEY = 'feedback-form-state';
 
 const refs = {
-  form: document.querySelector('.feedback-form'),
+  form: document.querySelector('.form'),
   labels: document.querySelectorAll('label'),
   input: document.querySelector('input'),
   textArea: document.querySelector('textarea'),

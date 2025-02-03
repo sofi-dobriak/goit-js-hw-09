@@ -1,0 +1,22 @@
+.user-main-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.user-container {
+    border: 1px solid rgba(117, 116, 116, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    min-width: 306px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.user-container:hover {
+    border-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(117, 116, 116, 0.2);
+}

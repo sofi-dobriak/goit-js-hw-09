@@ -6,8 +6,8 @@ const CARS_LIST_KEY = 'cars-list';
 let carsArray = [];
 
 const refs = {
-  carForm: document.querySelector('.feedback-form'),
-  carContainer: document.querySelector('.container'),
+  carForm: document.querySelector('.form'),
+  carContainer: document.querySelector('.car-main-container'),
 };
 
 refs.carForm.addEventListener('input', e => {

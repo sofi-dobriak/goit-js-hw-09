@@ -10,7 +10,7 @@ body {
     color: #2e2f42;
 }
 
-.feedback-form {
+.form {
     display: flex;
     flex-direction: column;
 
@@ -73,12 +73,12 @@ body {
     margin-top: 8px;
 }
 
-.form-textArea:hover {
+.form-textarea:hover {
     outline: none;
     border-color: #000;
 }
 
-.form-textArea:focus {
+.form-textarea:focus {
     outline: none;
     border-color: #808080;
 }
@@ -99,6 +99,7 @@ body {
     cursor: pointer;
 
     margin-top: 8px;
+    transition: background-color .3s ease;
 }
 
 .form-button:hover,
